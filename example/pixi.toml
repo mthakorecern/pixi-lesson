@@ -7,6 +7,7 @@ version = "0.1.0"
 
 [tasks]
 lab = "jupyter lab --no-browser"
+start = { cmd = "echo hello", depends-on = ["lab"] }
 
 [dependencies]
 python = ">=3.13.5,<3.14"
