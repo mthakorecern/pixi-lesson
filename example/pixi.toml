@@ -1,0 +1,15 @@
+[workspace]
+authors = ["mthakorecern <mitanshu.thakore@cern.ch>"]
+channels = ["conda-forge"]
+name = "example"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+lab = "jupyter lab --no-browser"
+
+[dependencies]
+python = ">=3.13.5,<3.14"
+numpy = ">=2.3.0,<3"
+jupyterlab = ">=4.4.3,<5"
+notebook = ">=7.4.3,<8"
